@@ -9,10 +9,11 @@ services:
     volumes:
       - postgres:/data/postgres
     ports:
-      - "5432:5432"
+      - "2345:5432"
     networks:
       - postgres
     restart: unless-stopped
+
   pgadmin:
     container_name: pgadmin
     image: dpage/pgadmin4
